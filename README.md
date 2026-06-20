@@ -1,6 +1,6 @@
 # 💬 WhatsApp Chat Analyzer
 
-An interactive dashboard that analyzes any exported WhatsApp chat — cleaning raw chat text and extracting meaningful insights.
+An interactive dashboard that analyzes any exported WhatsApp chat with a Machine Learning activity predictor.
 
 ## 📊 Features
 
@@ -8,17 +8,24 @@ An interactive dashboard that analyzes any exported WhatsApp chat — cleaning r
 - Automatic data cleaning (removes system messages, parses multi-line texts, filters junk senders)
 - Most active participants ranking
 - Daily message activity trend
+- **Machine Learning future activity predictor** (Linear Regression)
 - Hour-of-day and day-of-week activity patterns
 - Most commonly used words (with stopword filtering)
 - Key conversation insights
 
 ## 🛠️ Tech Stack
 
-- Python, Streamlit, Pandas, Numpy, Plotly, Regex
+- Python, Streamlit, Pandas, Numpy, Plotly, Regex, Scikit-learn
 
 ## 📁 Data Source
 
 - User-uploaded WhatsApp chat export (.txt) — no external dataset needed
+
+## 🤖 Machine Learning
+
+- Model: Linear Regression
+- Predicts future daily message volume based on historical activity trend
+- User can select how many days ahead to predict
 
 ## 🚀 How to Run
 
@@ -32,6 +39,7 @@ streamlit run app.py
 - Regex-based parsing of raw WhatsApp text format
 - Custom data cleaning pipeline (removes system messages, junk senders)
 - Word frequency analysis using Python's Counter
+- Time-series based activity forecasting
 
 ## 👤 Author
 
